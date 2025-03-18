@@ -3,12 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Calculadora de Edad en el Mundo de Star Wars</title>
+        <link rel="stylesheet" href="./resources/styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="conainer">
+                <div id="title">
+                    <h1>Calculadora de Edad en el Mundo de Star Wars</h1>
+                </div>
+                <div id="inputContainer">
+                    <input type="number" id="edad" placeholder="Ingresa la edad">
+                    <select id="especie">
+                        <option value="80">Humano</option>
+                        <option value="400">Wookiee</option>
+                        <option value="900">Yoda’s species</option>
+                        <option value="85">Twi’lek</option>
+                        <option value="60">Ewok</option>
+                    </select>
+                    <button onclick="convertirEdad()">Submit</button>
+                </div>
+                <div id="resultado">
+                    <p id="respuesta"></p>
+                </div>
+            </div>
         </main>
+        <script src="./resources/js/app.js"></script>
     </body>
 </html>
