@@ -3,7 +3,11 @@ function convertirEdad() {
     let edad = document.getElementById("edad").value;    
     console.log(edad);
     console.log(edadEspecie);
-    
+
+    respuesta.style.animation = "none"
+    void respuesta.offsetWidth;
+    respuesta.style.animation = "";
+
     if (edad > 0) {
         let edadEquivalente = (edad * edadEspecie) / 80;
         console.log(edadEquivalente);
